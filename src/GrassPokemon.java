@@ -14,16 +14,54 @@ public class GrassPokemon extends Pokemon {
         return attacks;
     }
 
+    public double calcDamageModifier(Pokemon gymPokemon) {
+        double damageModifier;
+
+        switch (gymPokemon.getType()) {
+            case "grass":
+                damageModifier = 0.5;
+                break;
+            case "water":
+                damageModifier = 0.75;
+                break;
+            case "fire":
+                damageModifier = 1;
+                break;
+            default:
+                damageModifier = 1.5;
+                break;
+        }
+        return damageModifier;
+    }
+
     public void leafStorm(Pokemon pokemon, Pokemon gymPokemon) {
         System.out.println(pokemon.getName() + " uses leafstorm on " + gymPokemon.getName());
+        int damage = (int) (60 * calcDamageModifier(gymPokemon)); // calculate damage modifier dependend on type
+        System.out.println(gymPokemon.getName() + " loses " + damage + " HP");
+        gymPokemon.setHp(gymPokemon.getHp() - damage); // Change HP
+        System.out.println(gymPokemon.getName() + " has " + gymPokemon.getHp() + " HP remaining");
     }
     public void solarBeam(Pokemon pokemon, Pokemon gymPokemon) {
         System.out.println(pokemon.getName() + " uses solarbeam on " + gymPokemon.getName());
+        int damage = (int) (90 * calcDamageModifier(gymPokemon)); // calculate damage modifier dependend on type
+        System.out.println(gymPokemon.getName() + " loses " + damage + " HP");
+        gymPokemon.setHp(gymPokemon.getHp() - damage); // Change HP
+        System.out.println(gymPokemon.getName() + " has " + gymPokemon.getHp() + " HP remaining");
     }
     public void leechSeed(Pokemon pokemon, Pokemon gymPokemon) {
         System.out.println(pokemon.getName() + " uses leechseed on " + gymPokemon.getName());
+        int damage = (int) (40 * calcDamageModifier(gymPokemon)); // calculate damage modifier dependend on type
+        System.out.println(gymPokemon.getName() + " loses " + damage + " HP");
+        pokemon.setHp(pokemon.getHp() + (damage / 2)); // heal hp
+        gymPokemon.setHp(gymPokemon.getHp() - damage); // Change HP
+        System.out.println(gymPokemon.getName() + " has " + gymPokemon.getHp() + " HP remaining");
+        System.out.println("your " + pokemon.getName());
     }
     public void leaveBlade(Pokemon pokemon, Pokemon gymPokemon) {
         System.out.println(pokemon.getName() + " uses leafblade on " + gymPokemon.getName());
+        int damage = (int) (80 * calcDamageModifier(gymPokemon)); // calculate damage modifier dependend on type
+        System.out.println(gymPokemon.getName() + " loses " + damage + " HP");
+        gymPokemon.setHp(gymPokemon.getHp() - damage); // Change HP
+        System.out.println(gymPokemon.getName() + " has " + gymPokemon.getHp() + " HP remaining");
     }
 }
