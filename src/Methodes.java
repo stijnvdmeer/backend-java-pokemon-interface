@@ -5,23 +5,17 @@ import java.util.*;
 public class Methodes {
 
     /*deze methode komt op meerdere plaatsen terug*/
-    List<String> getAttacks() {
-        return attacks;
-    }
-
 
 
     /*De volgende 16 methodes zijn aanvallen*/
 
 
-    public void leafStorm(Pokemon name, Pokemon enemy);
 
 
     void thunderPunch(Pokemon name, Pokemon enemy);
 
     void electroBall(Pokemon name, Pokemon enemy);
 
-    public void solarBeam(Pokemon name, Pokemon enemy);
 
 
 
@@ -29,9 +23,7 @@ public class Methodes {
     void thunder(Pokemon name, Pokemon enemy);
 
 
-    public void leechSeed(Pokemon name, Pokemon enemy);
 
-    public void leaveBlade(Pokemon name, Pokemon enemy);
 
 
     void voltTackle(Pokemon name, Pokemon enemy);
