@@ -1,4 +1,4 @@
-abstract class Pokemon {
+public abstract class Pokemon {
     private final String name;
     private final String type;
     private final int level;
