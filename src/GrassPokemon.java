@@ -7,7 +7,7 @@ public class GrassPokemon extends Pokemon {
     // maar er worden ook 6 variabelen verwacht in de Pokemon super class. Ik kan nergens een 7de variabele gevonden dus staat hier maar een.
 
     public GrassPokemon(String name, int level, int hp, String food, String sound) {
-        super(name, "fire", level, sound, food, hp);
+        super(name, "grass", level, sound, food, hp);
     }
 
     public List<String> getAttacks() {
