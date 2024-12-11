@@ -1,5 +1,8 @@
+import java.util.List;
+
 public interface PokemonGym {
     void enteredTheGym(PokemonTrainer playerOne);
+    void printPokemon(List<Pokemon> pokemons);
     Pokemon selectPokemon(String pokemon, PokemonTrainer trainer);
     void fightRound(PokemonTrainer trainer, PokemonGymOwner owner, Pokemon pokemon, Pokemon gymPokemon);
     Pokemon chooseGymPokemon(PokemonGymOwner gymOwner);
