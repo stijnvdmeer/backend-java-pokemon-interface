@@ -15,15 +15,15 @@ public class WaterPokemon extends Pokemon {
     }
 
     public void surf(Pokemon pokemon, Pokemon gymPokemon) {
-        System.out.println(pokemon.getName() + "uses surf on " + gymPokemon.getName());
+        System.out.println(pokemon.getName() + " uses surf on " + gymPokemon.getName());
     }
     public void hydroPump(Pokemon pokemon, Pokemon gymPokemon) {
-        System.out.println(pokemon.getName() + "uses hydropump on " + gymPokemon.getName());
+        System.out.println(pokemon.getName() + " uses hydropump on " + gymPokemon.getName());
     }
     public void hydroCanon(Pokemon pokemon, Pokemon gymPokemon) {
-        System.out.println(pokemon.getName() + "uses hydrocanon on " + gymPokemon.getName());
+        System.out.println(pokemon.getName() + " uses hydrocanon on " + gymPokemon.getName());
     }
     public void rainDance(Pokemon pokemon, Pokemon gymPokemon) {
-        System.out.println(pokemon.getName() + "uses raindance on " + gymPokemon.getName());
+        System.out.println(pokemon.getName() + " uses raindance on " + gymPokemon.getName());
     }
 }

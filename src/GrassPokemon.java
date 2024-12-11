@@ -15,15 +15,15 @@ public class GrassPokemon extends Pokemon {
     }
 
     public void leafStorm(Pokemon pokemon, Pokemon gymPokemon) {
-        System.out.println(pokemon.getName() + "uses leafstorm on " + gymPokemon.getName());
+        System.out.println(pokemon.getName() + " uses leafstorm on " + gymPokemon.getName());
     }
     public void solarBeam(Pokemon pokemon, Pokemon gymPokemon) {
-        System.out.println(pokemon.getName() + "uses solarbeam on " + gymPokemon.getName());
+        System.out.println(pokemon.getName() + " uses solarbeam on " + gymPokemon.getName());
     }
     public void leechSeed(Pokemon pokemon, Pokemon gymPokemon) {
-        System.out.println(pokemon.getName() + "uses leechseed on " + gymPokemon.getName());
+        System.out.println(pokemon.getName() + " uses leechseed on " + gymPokemon.getName());
     }
     public void leaveBlade(Pokemon pokemon, Pokemon gymPokemon) {
-        System.out.println(pokemon.getName() + "uses leafblade on " + gymPokemon.getName());
+        System.out.println(pokemon.getName() + " uses leafblade on " + gymPokemon.getName());
     }
 }

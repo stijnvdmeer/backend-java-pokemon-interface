@@ -15,15 +15,15 @@ public class FirePokemon extends Pokemon {
     }
 
     public void fireLash(Pokemon pokemon, Pokemon gymPokemon) {
-        System.out.println(pokemon.getName() + "uses firelash on " + gymPokemon.getName());
+        System.out.println(pokemon.getName() + " uses firelash on " + gymPokemon.getName());
     }
     public void flameThrower(Pokemon pokemon, Pokemon gymPokemon) {
-        System.out.println(pokemon.getName() + "uses flamethrower on " + gymPokemon.getName());
+        System.out.println(pokemon.getName() + " uses flamethrower on " + gymPokemon.getName());
     }
     public void inferno(Pokemon pokemon, Pokemon gymPokemon) {
-        System.out.println(pokemon.getName() + "uses inferno on " + gymPokemon.getName());
+        System.out.println(pokemon.getName() + " uses inferno on " + gymPokemon.getName());
     }
     public void pyroBall(Pokemon pokemon, Pokemon gymPokemon) {
-        System.out.println(pokemon.getName() + "uses pyroball on " + gymPokemon.getName());
+        System.out.println(pokemon.getName() + " uses pyroball on " + gymPokemon.getName());
     }
 }
