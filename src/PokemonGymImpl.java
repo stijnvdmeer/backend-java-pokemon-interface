@@ -54,8 +54,9 @@ public class PokemonGymImpl implements PokemonGym {
 
             System.out.println("Its " + owner.getName() + "'s turn to attack");
             gymOwnerAttacks(gymPokemon, pokemon);
-            System.out.println("Its " + trainer.getName() + "'s turn to attack");
-            attackOrChange(pokemon, gymPokemon, trainer, owner);
+            if (pokemon.getHp() <= 0) break;                                                                            // If the users pokemon fainted on the opponents attack then,
+            System.out.println("Its " + trainer.getName() + "'s turn to attack");                                       // the users pokemon would be allowed to attack again
+            attackOrChange(pokemon, gymPokemon, trainer, owner);                                                        // I fixed it by adding a check on line-57 and if correct exit the loop
 
         }
         if(pokemon.getHp() <= 0){
