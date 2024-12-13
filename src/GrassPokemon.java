@@ -55,7 +55,7 @@ public class GrassPokemon extends Pokemon {
         pokemon.setHp(pokemon.getHp() + (damage / 2)); // heal hp
         gymPokemon.setHp(gymPokemon.getHp() - damage); // Change HP
         System.out.println(gymPokemon.getName() + " has " + gymPokemon.getHp() + " HP remaining");
-        System.out.println("your " + pokemon.getName());
+        System.out.println("your " + pokemon.getName() + " has healed for " + (damage / 2));
     }
     public void leaveBlade(Pokemon pokemon, Pokemon gymPokemon) {
         System.out.println(pokemon.getName() + " uses leafblade on " + gymPokemon.getName());
